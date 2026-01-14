@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QM-Guru – ISO-9001-Aufwand einschätzen</title>
+  <link rel="stylesheet" href="assets/qm-estimator.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1>ISO-9001-Aufwand einschätzen – Demo</h1>
+    <p class="lead">
+      Diese Seite zeigt, welcher Aufwand typischerweise entsteht,
+      um bereits gelebte Abläufe ISO-9001-konform zu beschreiben.
+      Es werden keine neuen Prozesse erfunden.
+    </p>
+
+    <section
+      class="qm-estimator"
+      data-contact-url="/kontakt/"
+      data-cta-label="Kostenlos prüfen, was bereits ISO-9001-konform ist"
+      data-headline="ISO-9001-Aufwand einschätzen – in 60 Sekunden"
+    >
+      <div class="qm-estimator__card">
+        <h3 class="qm-estimator__headline">🔍 <span class="qm-estimator__headlineText"></span></h3>
+
+        <p class="qm-estimator__sub">
+          Sag mir kurz <strong>deine Branche</strong> und <strong>die Anzahl der Mitarbeitenden</strong> –
+          ich schätze realistisch, welcher Aufwand typischerweise entsteht,
+          um vorhandene Abläufe nachvollziehbar nach ISO 9001 darzustellen.
+        </p>
+
+        <div class="qm-estimator__fields">
+          <label class="qm-estimator__label">
+            <span>Branche</span>
+            <select class="qm-estimator__industry">
+              <option value="">Bitte auswählen …</option>
+              <option value="service">Dienstleistung</option>
+              <option value="craft">Handwerk</option>
+              <option value="it">IT / Software</option>
+              <option value="production">Industrie / Produktion</option>
+              <option value="retail">Handel</option>
+              <option value="other">Sonstige</option>
+            </select>
+          </label>
+
+          <fieldset class="qm-estimator__sizes">
+            <legend>Mitarbeiterzahl</legend>
+            <div class="qm-estimator__sizeButtons">
+              <button type="button" data-size="1-5">1–5</button>
+              <button type="button" data-size="6-20">6–20</button>
+              <button type="button" data-size="21-50">21–50</button>
+              <button type="button" data-size="51-100">51–100</button>
+              <button type="button" data-size="100+">über 100</button>
+            </div>
+          </fieldset>
+        </div>
+
+        <button type="button" class="qm-estimator__btn" disabled>
+          Einschätzung anzeigen
+        </button>
+
+        <p class="qm-estimator__microcopy">
+          Die Einschätzung dient der Orientierung.
+          Sie zeigt den typischen Aufwand zur Beschreibung bestehender Praxis.
+        </p>
+
+        <div class="qm-estimator__result" hidden></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/qm-estimator.js"></script>
+</body>
+</html>
