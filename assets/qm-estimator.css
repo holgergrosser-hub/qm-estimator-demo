@@ -1,0 +1,26 @@
+body { font-family: system-ui, Arial, sans-serif; padding: 24px; }
+.wrap { max-width: 860px; margin: 0 auto; }
+.lead { opacity: .85; }
+
+.qm-estimator__card {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 16px;
+}
+.qm-estimator__fields { margin: 12px 0; }
+.qm-estimator__sizeButtons button {
+  margin: 4px;
+  padding: 8px 12px;
+}
+.qm-estimator__sizeButtons button.is-active {
+  border: 2px solid black;
+}
+.qm-estimator__btn {
+  margin-top: 10px;
+  padding: 10px;
+}
+.qm-estimator__result {
+  margin-top: 14px;
+  border-top: 1px solid #ddd;
+  padding-top: 12px;
+}
